@@ -17,7 +17,7 @@ $productos = DAO::productoObtenerTodos();
 
 <body>
 
-<table border="1">
+<table border="2">
 
     <tr>
         <th>Producto</th>

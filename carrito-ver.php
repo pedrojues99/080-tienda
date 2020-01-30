@@ -3,7 +3,7 @@
 require_once "_comprobar-sesion.php";
 require_once "_clases.php";
 require_once "_dao.php";
-$carrito=DAO::obtenerPorCliente($_SESSION["id"]); //O clienteId o id o idCliente
+$carrito=DAO::obtenerCarritoPorCliente($_SESSION["id"]); //O clienteId o id o idCliente
 
 ?>
 
@@ -27,7 +27,7 @@ winze was here -->
 
     if ($carrito){
     foreach ($productos as $fila) {
-        $producto=DAO::obtenerProducto($fila["producto_id"])
+        $producto=DAO::obtenerProductoPorId($fila["producto_id"]);
         ?>
 
         <tr>

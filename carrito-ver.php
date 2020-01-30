@@ -26,7 +26,7 @@ $carrito=DAO::obtenerCarritoPorCliente($_SESSION["id"]); //O clienteId o id o id
 
     if ($carrito){
     foreach ($productos as $fila) {
-        $producto=DAO::obtenerProductoPorId($fila["producto_id"]);
+        $producto=DAO::obtenerProductoPorId($fila["producto_id"]);//obtenerProductoPorId
         ?>
 
         <tr>

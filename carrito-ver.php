@@ -13,8 +13,7 @@ $carrito=DAO::obtenerCarritoPorCliente($_SESSION["id"]); //O clienteId o id o id
 	<meta charset="UTF-8">
     <title>carrito ver</title>
 </head>
-<!--
-winze was here -->
+
 <body>
 
 <?php require "_info-sesion.php"; ?>
